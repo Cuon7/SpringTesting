@@ -1,0 +1,20 @@
+DROP TABLE IF EXISTS Student;
+
+CREATE TABLE Student (
+  id INT AUTO_INCREMENT  PRIMARY KEY,
+  userName VARCHAR(250) NOT NULL,
+  phoneNumber VARCHAR(250) NOT NULL,
+  name VARCHAR(250) NOT NULL
+);
+
+CREATE TABLE LOGS (
+	EXECUTEDATE VARCHAR(255) NOT NULL,
+    URI  VARCHAR(255)    NOT NULL,
+    METHOD1   VARCHAR(255)    NOT NULL,
+    BODY VARCHAR(1000) 
+   );
+
+INSERT INTO Student (userName, phoneNumber, name) VALUES
+  ('cuong123', '0969696969', 'Tran Manh Cuong'),
+  ('cuong231', '0996969696', 'Manh Cuong Tran');
+
